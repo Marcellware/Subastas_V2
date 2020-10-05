@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css1/normalize.css">
+    <link rel="stylesheet" href="css1/skeleton.css">
+    <link rel="stylesheet" href="css1/style.css">
+    <link rel="stylesheet" href="css1/styles2.css">
+
+
+    <title>RegistroArticulo</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <table>
+                        <tr>
+                            <td><h1>SubastasWEB</h1></td>
+                            <td><h3><a class="enlace" href="index.php"style="text-decoration:none">Pagina Principal</a><h3></td>
+                        </tr>
+                    </table>  
+                </div>
+            </div>
+        </div>
+    </header>
+    
+ 
+
+    <section>
+    <h3>Nueva Subasta</h3>  
+        <div class= "form">
+            <form action="nueva_art.php" method="POST" enctype="multipart/form-data"><!---enctype nos permite imagen base de datos--->
+                <p>NOMBRE DE LA SUBASTA<input type="text" name="nombre_su" placeholder="Nombre de Subasta" required ></p>
+                <p>FECHA DE INICIO <input type="date" name="correoinicio"  required></p>
+                <p>FECHA FINALIZACION<input type="date" name="correofin" required></p>
+                <p>ESTADO  <select name="estado">
+                    <option value="ABIERTO">Abierto</option> 
+                    <option value="FINALIZADO">Finalizado</option>
+                    </select></p>
+        </section>
+        <section>
+            <h3>Nuevo Articulo</h3>     
+
+            <div class= "form2">
+                
+            
+                    <p>NOMBRE DE ARTICULO<input type="text" name="nombre_ar" placeholder="Nombre de Articulo" required></p>
+                    <p>CATEGORIA <select name="categoria">
+                        <option value="MUEBLES">Inmuebles</option> 
+                        <option value="ELECTRODOMESTICO">Eletrodomestico</option> 
+                        <option value="TECNOLOGIA">Tecnologia</option>
+                        <option value="ROPA">Ropa</option> 
+                        <option value="ALIMENTOS">Alimentos</option> 
+                        <option value="OTROS">Otros</option> 
+                     </select></p>
+                    <p>PRECIO INICIAL</p><input type="number" name="precio" placeholder="0" min=0 required></p>
+                    <p>DESCRIPCION</p>
+                    <textarea name="textarea" maxlength="200" id="" placeholder="Max 200 Caracteres" cols="30" rows="10" oninput="maxlengthNumber(this);" required></textarea>
+                    <script>
+                        function maxlengthNumber (obj) {
+                        console.log(obj.value); //para validad 
+                            if(obj.value.length > obj.maxLength) {
+                                obj.value = obj.value.slice(0, obj.maxLength);
+                            }
+                        }
+                    </script>
+
+                    <p>IMAGEN</p><input type="file" name="imagen" 
+                    class="input-group" id="field_6_3" size="10" 
+                    onchange="return verificationsAfterFieldChange('ef697bef54dfa09c9109d1ca6d2d8e37', '0','longblob')" placeholder="imagen" required></p>
+                    <input type="submit" value="REGISTRAR ARTICULO">
+                </form2>   
+            </section>
+            </div>
+    <footer class="footer">
+        <p>Fundamentos de Sistemas de Información  - Todos los derechos reservados</p>
+    </footer>    
+
+</body>
+</html>

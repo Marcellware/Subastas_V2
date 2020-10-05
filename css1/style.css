@@ -1,0 +1,105 @@
+.form{
+    position:relative;
+    width: 500px;
+    height: 350px; 
+    padding-left: 20px;
+    padding-top: 15px;
+  
+    border-radius: 20px;
+    margin:auto;
+}
+
+.form2{
+    position:relative;
+    width: 500px;
+    height: 600px; 
+    padding-left: 20px;
+    padding-top: 15px;
+  
+    border-radius: 20px;
+    margin:auto;
+}
+
+
+body {
+    background-color: #17181b;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+h2 {
+    text-align: center;
+    font-size: 33px;
+    color: white;
+}
+
+
+section{
+    background: white;
+}
+header {
+    padding: 20px 0 0 0;
+    background: #1d2124;
+    text-align: center;
+}
+a {
+    color: #fbaf32; 
+    text-align: center;
+    font-size: 22px;
+}
+
+.header2{
+    background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+
+.encabezado {
+    margin: 30px 0;
+    color: white;
+}
+.submenu {
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background: #17181b;
+    padding: 20px;
+}
+
+
+
+.barra p {
+    margin: 0;
+    color: white;
+}
+
+footer {
+    background-color:rgb(44, 107, 224);
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+.footer .menu a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+
+
+

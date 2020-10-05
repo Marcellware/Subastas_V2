@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+#Contenedor {
+    width: 100%;
+    height: 100%;
+    background: #1a3c86;
+    margin:0, 2em auto ;
+    padding:0.2em;
+}
+
+#SubastasWeb {
+    height: 60%;
+    background: #0000004d;
+    margin:0.2em;
+    border-radius: 1em;    
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 40px;
+    text-align:center;
+    letter-spacing: -1.2px;
+    word-spacing: -4.4px;
+    color: #fff9f9;
+    font-weight: 400;
+    float: left;
+}
+#nav3{
+    float: right;
+    height: 60%;
+    background: #000000;
+    word-spacing: 6px;
+    border-radius: 1em;    
+    margin:1em;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 21px;
+    text-align:center;
+    letter-spacing: -1.2px;
+    word-spacing: -4.4px;
+    font-weight: 200;
+    
+}
+
+#Contenido {
+    height: 67%;
+    background: #ffffffe0;
+    margin:1em;
+    text-shadow: rgb(255, 255, 255);
+    padding:0.2em;
+    margin:1, 5em auto ;
+}
+
+table {
+    padding: 10px;
+}    
+
+tr {
+    padding: 5px;
+}
+
+table, th, td {
+    border: solid 1px black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#Articulobarra {
+    height: 10%;
+    width: 99%;
+    background: #ffffff;
+    margin:0.2em;
+    border-radius: 1em;    
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 30px;
+    text-align:center;
+    letter-spacing: -1.2px;
+    word-spacing: -4.4px;
+    color:rgb(0, 0, 0);
+}
+
+.Articulotitle {
+    
+    margin:40px auto;
+    display: grid;
+    grid-gap: 7px; /*espaciado*/
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+#Cosa1 {
+    float: left;
+    width: 25%;
+    grid-column-start: 1;
+    grid-column-start: 2;
+}
+
+#Cosa2 {
+    width: 25%;
+    float: left;
+    grid-column-start: 2;
+    grid-column-start: 3;
+}
+
+#Cosa3 {
+    width: 20%;
+    float: right;
+    grid-column-start: 3;
+    grid-column-start: 4;
+}
+
+
+#Objeto1 {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin:1px;
+    overflow: hidden;
+}
+
+#ImagenPrecio {
+    height:99%;
+    padding: 5px;
+    margin:1px;
+    float: left;
+    padding: 1px;
+    overflow: hidden;
+}
+
+#Descripcion {
+    padding: 5px;
+    margin:1px;
+    float: left;
+    padding: 0px;
+    height:99%;
+    padding: 5px;
+    
+}
+#imagen{
+    text-align:center;
+}
+
+#Enviar {
+    height: 10%;
+    width: 10%;
+    background: #084242d0;
+    margin:0.2em;
+    border-radius: 1em;    
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+    text-align:center;
+    letter-spacing: -1.2px;
+    word-spacing: -4.4px;
+    color: #fff9f9;  
+}
+
+
